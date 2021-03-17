@@ -1,25 +1,48 @@
-# Data Science Bootcamp ->>>>>  Project 1
+# Data Science Bootcamp | Project 1
 
 
-Data Science &amp; Analytics Bootcamp 
+Data Science &amp; Analytics Bootcamp | Covid Analysis Project 
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Due to the NEVER ENDING pandemic we decided to take a look at this API (https://covidtracking.com/data/api) to get a better understanding of global trends during this time. 
 
-This projgect is not well defined yet.
+### Technical Requirements 
+ * Use Pandas to clean and format your data set
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should element DRY principles to the rest of your life :smile:
+ * Create a Jupyter Notebook describing the data exploration and cleanup process
 
-### Built With
+ * Create a Jupyter Notebook illustrating the final data analysis
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-Python 3.7
+ * Use Matplotlib to create a total of 6-8 visualizations of your data (ideally, at least 2 per "question" you ask of your data)
 
+ * Save PNG images of your visualizations to distribute to the class and instructional team, and for inclusion in your presentation
+
+ * Optionally, use at least one API, if you can find an API with data pertinent to your primary research questions
+
+ * Create a write-up summarizing your major findings. This should include a heading for each "question" you asked of your data, and under each heading, a short description of what you found and any relevant plots.
+
+
+### Presentation Requirements 
+ * Be at least 8-10 min. long
+
+ * Describe the core message or hypothesis for your project.
+
+ * Describe the questions you and your group found interesting, and what motivated you to answer them
+
+ * Summarize where and how you found the data you used to answer these questions
+
+ * Describe the data exploration and cleanup process (accompanied by your Jupyter Notebook)
+
+ * Describe the analysis process (accompanied by your Jupyter Notebook)
+
+ * Summarize your conclusions. This should include a numerical summary (i.e., what data did your analysis yield), as well as visualizations of that summary (plots of the final analysis data)
+
+ * Discuss the implications of your findings. This is where you get to have an open-ended discussion about what your findings "mean".
+
+ * Tell a good story! Storytelling through data analysis is no different than in literature. Find your narrative and use your analysis and visualization skills to highlight conflict and resolution in your data.
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -27,30 +50,21 @@ Python 3.7
 This is an example of how you may give instructions on setting up your project locally.
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-This is an example of how to list things you need to use the software and how to install them.
-python
-pandas
-...
-
-### Installation
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
 
 <!-- ROADMAP -->
 ## Roadmap
 
+Put reports here. 
 
+* National trend for the last 90 days
+
+* Cases by state 
+
+* Dynamic Notebooks 
+
+* Democratic states have more or less cases than Republican states 
+
+* Dependent vs. Independent Variables 
 
 
 <!-- CONTRIBUTING -->
@@ -58,12 +72,11 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
-1. Fork the Project
+1. Clone the Repo
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
-
 
 
 <!-- LICENSE -->
