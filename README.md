@@ -7,7 +7,7 @@ Data Science &amp; Analytics Bootcamp | Covid Analysis Project
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Due to the NEVER ENDING pandemic we decided to take a look at this API (https://covidtracking.com/data/api) to get a better understanding of global trends during this time. 
+Due to the NEVER ENDING pandemic we decided to take a look at this data from 2 different sources and merge them together. We want to find out if political party affects the number of covid cases and/or deaths per state.
 
 ### Technical Requirements 
  * Use Pandas to clean and format your data set
@@ -44,23 +44,10 @@ Due to the NEVER ENDING pandemic we decided to take a look at this API (https://
 
  * Tell a good story! Storytelling through data analysis is no different than in literature. Find your narrative and use your analysis and visualization skills to highlight conflict and resolution in your data.
 
-<!-- GETTING STARTED -->
-## Getting Started
-
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
-
-
 <!-- ROADMAP -->
 ## Roadmap
 
-Put reports here. 
-
-* National trend for the last 90 days
-
 * Cases by state 
-
-* Dynamic Notebooks 
 
 * Democratic states have more or less cases than Republican states 
 
