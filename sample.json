@@ -1,1 +1,179 @@
-{'state': 'AK', 'notes': 'Alaska combines PCR and antigen tests in the total tests figure reported on the state\'s dashboard.\n\nAs of February 6, 2021, [Alaska no longer updates](https://twitter.com/alaska_dhss/status/1355349178335944708?s=21) their COVID-19 dashboards on weekends. As a result, we will be unable to update their data on Saturdays and Sundays. \n\nOn February 12, 2021, Alaska [announced](https://twitter.com/Alaska_DHSS/status/1360413364065767424?s=20) via the official Alaska Department of Health and Social Services twitter that there would be no update to their data on February 15, 2021 due to the Presidents Day holiday.\n\nOn January 20, 2021, Alaska [reported](https://www.adn.com/alaska-news/2021/01/20/tracking-covid-19-in-alaska-record-23-deaths-and-167-infections-reported-wednesday/) a comparatively large increase of 23 deaths due to a review of death certificates.\n\nOn January 4, 2020, Alaska noted that "counted deaths in Alaska include COVID-19 cases confirmed through a lab result as well as probable deaths based on confirmed COVID-19 clinical and epidemiological criteria as defined by the CDC with no confirmatory lab testing." Due to this change we are unable to update the **Confirmed deaths** metric after January 4, 2020.\n\nOn January 1, 2021, Alaska noted that there would be no update to their data on January 1, 2021.\n\nOn December 25, 2020, Alaska announced on their dashboard that there would be no update to their data on December 25, 2020. \n\nOn November 17, 2020, Alaska [announced](https://alaska-coronavirus-vaccine-outreach-alaska-dhss.hub.arcgis.com/datasets/cases-frequently-asked-questions) that “As of 11/17/2020, the cases dashboard will not be showing data on recovered and active cases due to the increasing State case load”. Due to this we cannot continue reporting **Recovered**, however the time series for this metric is available in the historical data, and our data downloads. \n\nOn November 16, 2020 we updated the **Cases (confirmed plus probable)** field to include only residents. We also deleted the time series for **Confirmed cases** because Alaska is lumping PCR and antigen testing for their case definition.\n\nOn November 16, 2020 we added **Cumulative Hospitalized** (which includes both residents and non-residents), although the value does not reflect current hospitalizations.\n\nOn November 7, 2020, Alaska announced that their testing dashboard would be "temporarily disabled from November 6th to November 9th" and that testing data could be accessed through their data summary tables. After originally using the data summary tables on November 7, we have reversed that decision, and reverted the values to their November 6th state. The frozen values were replaced on November 10, with values from the state\'s [Tests Dataset](https://coronavirus-response-alaska-dhss.hub.arcgis.com/datasets/tests-dataset). \n\nOn November 6, 2020, Alaska’s **Total PCR tests (specimens)** and **Positive PCR tests (specimens)** decreased without explanation. As a result, `Negative`, which is calculated by subtracting **Total cases** from **Total PCR tests (specimens)**, decreased also.\n\nOn November 5, 2020, Alaska’s **Total PCR tests (specimens)** increased from roughly 628k to 782k. We were unable to find an explanation for the increase.\n\nAs of September 18, 2020, Alaska\'s total test results are drawn from our `totalTestsViral` field instead of calculated via positive+negative.', 'covid19Site': 'http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/monitoring.aspx', 'covid19SiteSecondary': 'https://experience.arcgis.com/experience/ed1c874ca60b4c15ab09095a070065ca', 'covid19SiteTertiary': 'https://alaska-dhss.maps.arcgis.com/apps/opsdashboard/index.html#/8782a14ef52342e99f866a3b8a3e624a', 'covid19SiteQuaternary': 'https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/Tests_Dataset/FeatureServer/0/query?where=Test_Result+%3D+%27Negative%27&outStatistics=%5B%7B%27statisticType%27%3A+%27count%27%2C+%27onStatisticField%27%3A+%27FID%27%2C+%27outStatisticFieldName%27%3A+%27tests_negative%27%7D%5D', 'covid19SiteQuinary': 'https://services1.arcgis.com/WzFsmainVTuD5KML/arcgis/rest/services/Tests_Dataset/FeatureServer/0/query?where=Test_Result+%3D+%27Positive%27&outStatistics=%5B%7B%27statisticType%27%3A+%27count%27%2C+%27onStatisticField%27%3A+%27FID%27%2C+%27outStatisticFieldName%27%3A+%27tests_positive%27%7D%5D', 'twitter': '@Alaska_DHSS', 'covid19SiteOld': 'http://dhss.alaska.gov/dph/Epi/id/Pages/COVID-19/default.aspx', 'covidTrackingProjectPreferredTotalTestUnits': 'Specimens', 'covidTrackingProjectPreferredTotalTestField': 'totalTestsViral', 'totalTestResultsField': 'Total Tests (PCR)', 'pui': 'All data', 'pum': False, 'name': 'Alaska', 'fips': '02'}
+{
+    "frameview_db": {
+        "hostname": "frameview.c8eobegfccxf.us-east-1.rds.amazonaws.com",
+        "port": "5432",
+        "db": "frameview",
+        "username": "frameview",
+        "password": "SR3&Analytic$"
+    },
+    "frameview_db_dev": {
+        "hostname": "frameview-dev.c8eobegfccxf.us-east-1.rds.amazonaws.com",
+        "port": "5432",
+        "db": "frameview",
+        "username": "frameview",
+        "password": "SR3&Analytic$"
+    },
+    "frameview_db_dev_readonly": {
+        "hostname": "frameview-dev.c8eobegfccxf.us-east-1.rds.amazonaws.com",
+        "port": "5432",
+        "db": "frameview",
+        "username": "frameview_readonly",
+        "password": "SR3&Visual$"
+    },
+    "frameview_db_dev_datadetect": {
+        "hostname": "frameview-dev.c8eobegfccxf.us-east-1.rds.amazonaws.com",
+        "port": "5432",
+        "db": "frameview",
+        "username": "datadetect",
+        "password": "9cwh7n27xX7Dd62"
+    },
+    "frameview_db_dev_tunnel_readonly": {
+        "hostname": "frameview-db-dev-30598ed20ac591b6.elb.us-east-1.amazonaws.com",
+        "port": "80",
+        "db": "frameview",
+        "username": "frameview_readonly",
+        "password": "SR3&Visual$"
+    },
+    "frameview_db_predix": {
+        "hostname": "db-4a18cd28-c38c-4708-88cd-748808f8f655.c7uxaqxgfov3.us-west-2.rds.amazonaws.com",
+        "port": "5432",
+        "db": "postgres",
+        "username": "ul7r2um9ohy1a09j",
+        "password": "ttz7kcsykkspuj22qf7g5cw67"
+    },
+    "frameview_db_predix_local": {
+        "hostname": "localhost",
+        "port": "4002",
+        "db": "postgres",
+        "username": "ul7r2um9ohy1a09j",
+        "password": "ttz7kcsykkspuj22qf7g5cw67"
+    },
+    "frameview_db_dev_corp": {
+        "hostname": "corp-uai2008693-dev.ciqzs4eoe50f.us-east-1.rds.amazonaws.com",
+        "port": "5432",
+        "db": "postgres",
+        "username": "frameview",
+        "password": "SR3&Analytic$"
+    },
+    "aptare_backup_prod": {
+        "hostname": "CGHCTS000001445.corporate.ge.com",
+        "port": "1521",
+        "SID": "scdb",
+        "username": "portal",
+        "password": "portal"
+    },
+    "aptare_backup_dev": {
+        "hostname": "CGHCTS000001445.corporate.ge.com",
+        "port": "1521",
+        "SID": "scdb",
+        "username": "portal",
+        "password": "portal"
+    },
+    "uaa": {
+        "url": "https://d2cdc334-7f8c-4218-b059-48f94bd98d15.predix-uaa.run.asv-pr.ice.predix.io",
+        "client": "sre_frameview",
+        "secret": "sre@123#",
+        "x_tenant": "d2cdc334-7f8c-4218-b059-48f94bd98d15"
+    },
+    "akana": {
+        "client_id": "GECorporate-3yfrlLoUJomACquGGDeoaa5W",
+        "client_secret": "6a326e103e96c20dc9f16c029d607b59cde646e9"
+    },
+    "akana_dev": {
+        "client_id": "GECorporate-4ItlIoBXP7u7ukokvsyfDuBj",
+        "client_secret": "85ff5b2c084ec6f749be0acf9d60c5833caa18e3"
+    },
+    "em_credentials": {
+        "username": "frameview",
+        "password": "SR3&Analytic$"
+    },
+    "frameview_logon_old": {
+        "id": "lg776288sv",
+        "password": "L11TqHUR"
+    },
+    "frameview_logon": {
+        "id": "lg776288sv",
+        "password": "ynUhn9k6Hvc0N1y"
+    },
+    "frameview_logon_previous": {
+        "id": "lg776288sv",
+        "password": "ZUr3jk5EdF5ruJr"
+    },
+    "xio": {
+        "username": "frameviewRO",
+        "password": "Pa55word"
+    },
+    "aptare_storage_prod": {
+        "hostname": "3.239.6.201",
+        "port": "1521",
+        "SID": "scdb",
+        "username": "portal",
+        "password": "portal"
+    },
+    "aptare_storage_dev": {
+        "hostname": "3.239.129.176",
+        "port": "1521",
+        "SID": "scdb",
+        "username": "portal",
+        "password": "portal"
+    },
+    "ontap_api": {
+        "username": "framequery1",
+        "password": "%*#H`ev=6^Sb",
+        "hostname": "https://10.152.77.51:8443/"
+    },
+    "cmdb": {
+        "hostname": "cihcispdba259.corporate.ge.com",
+        "port": "1681",
+        "SID": "gisedwp",
+        "username": "DM_NOSEC_RO_CLEARVIEW",
+        "password": "welcome_12a"
+    },
+    "greenplum": {
+        "hostname": "3.48.35.34",
+        "port": "5432",
+        "db": "corp_it",
+        "username": "502747575",
+        "password": "lg747575456lg"
+    },
+    "neo_corp_it": {
+        "hostname": "neo-corp-it-reader.c8eobegfccxf.us-east-1.rds.amazonaws.com",
+        "database": "neo_corp_it",
+        "username": "frameview",
+        "password": "SR3&Analytic$"
+    },
+    "neo_corp_it_dev": {
+        "hostname": "neo-corp-it-dev-6bc803133aeb8296.elb.us-east-1.amazonaws.com",
+        "database": "neo_corp_it",
+        "username": "frameview",
+        "password": "SR3&Analytic$"
+    },
+    "vmax": {
+        "username": "frameviewRO",
+        "password": "Pa55word"
+    },
+    "isilon": {
+        "username": "frameviewro",
+        "password": "Pa55word"
+    },
+    "7mode": {
+        "username": "aptareadmin",
+        "password": "W1nd_m1LL5"
+    },
+    "aptare_dashboard": {
+        "username": "admin@corporate.ge.com",
+        "password": "B1LLingPr0d"
+    },
+    "aptare_backup_dashboard": {
+        "username": "de600151",
+        "password": "cAqMMP0GzsFJOE"
+    },
+    "brocade": {
+        "username": "frameviewRO",
+        "password": "P@55w0rd"
+    },
+    "unity": {
+        "username": "frameviewRO",
+        "password": "r#E3e#E3e"
+    }
+}
